@@ -8,9 +8,9 @@ def date_checker():
     Thurs = today + timedelta(days=1)
     Thurs_Day = Thurs.day
     day_of_week_tmr = today + timedelta(days=1)
-    if day_of_week_tmr == 3 and 1 <= Thurs_Day <= 7:
+    if day_of_week_tmr.weekday == 3 and 1 <= Thurs_Day <= 7:
         print("This week contains the first Thursday of the month")
-    elif day_of_week_tmr == 3 and 15 <= Thurs_Day <= 21:
+    elif day_of_week_tmr.weekday == 3 and 15 <= Thurs_Day <= 21:
         print("This week contains the third Thursday of the month")
     else:
         print("Don't need to do anything this week")
