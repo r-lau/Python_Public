@@ -5,7 +5,6 @@ from datetime import date, timedelta
 today = date.today()
 
 def date_checker():
-    Thurs = today + timedelta(days=1)
     Thurs_Day = Thurs.day
     day_of_week_tmr = today + timedelta(days=1)
     if day_of_week_tmr == 3 and 1 <= Thurs_Day <= 7:
